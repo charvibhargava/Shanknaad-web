@@ -198,15 +198,24 @@
 /* media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 300px) and (max-width: 480px){
-    .info{
-        height: 100vh;
-    }
-
+    
     .container-headings{
         margin-top: 70px;
-        font-size: 52px;
+        margin-bottom: 20px;
     }
 
+    .l-1,
+    .l-2,
+    .l-3{
+        font-size: 32px;
+    }
+
+    .footer-copyright{
+        height: 50px;
+    }
+    .eve_name{
+        font-size: 20px;
+    }
 }
 @media only screen and (max-width: 600px) {
     .landing_page{

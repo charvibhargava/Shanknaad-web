@@ -197,6 +197,16 @@
 
 /* media queries */
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 300px) and (max-width: 480px){
+    .info{
+        height: 100vh;
+    }
+
+    .container-headings{
+        margin-top: 70px;
+    }
+
+}
 @media only screen and (max-width: 600px) {
     .landing_page{
         height: 80vh;
@@ -252,6 +262,7 @@
     .tagline2{
         font-size: 50px;
     }
+    
     .load_more_arrow{
         display: none;
     }
@@ -277,6 +288,14 @@
     .info .paragraph{
         font-size: 20px;
     }
+    .register{
+        width: fit-content;
+    }
+
+    .register .load_more_arrow{
+        display: none;
+    }
+  
   }
   
   /* Medium devices (landscape tablets, 768px and up) */

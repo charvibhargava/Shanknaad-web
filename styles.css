@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Sans+Devanagari&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&family=Rubik+Mono+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.landing_page {
+    background-image: url(assets/Landing\ Bg.png);
+    height: 100vh;
+
+}
+
+.container-fluid a {
+    text-decoration: solid;
+    color: white;
+}
+
+.container-fluid .navbar-toggler .navbar-toggler-icon {
+    color: white;
+}
+
+.container-fluid .nav-item a {
+    color: white;
+    text-decoration: solid;
+    justify-content: space-between;
+}
+
+.navbar-nav>.active>a {
+    color: white;
+}
+
+.navbar {
+    font-weight: 700;
+}
+
+.navbar-brand {
+    color: aliceblue;
+}
+
+.text {
+    display: flex;
+    margin: 0;
+    
+}
+
+/* MAIN HEADING CSS */
+.heading {
+    margin-left: 5vw;
+    margin-top: 10vh;
+    height: 50%;
+    color: white;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.heading .h1 {
+    font-weight: 400;
+    margin-left: 0;
+    font-size: 10rem;
+}
+
+.year {
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.tagline1 {
+    font-size: 41px;
+}
+
+.tagline2 {
+    font-size: 41px;
+
+}
+
+.icons {
+    margin-top: 54vh;
+    height: fit-content;
+
+}
+
+.vl {
+    position: absolute;
+    border-left: 2px solid white;
+    height: 20vh;
+    top: 45%;
+    right: 3%;
+}
+
+
+
+
+/* 2nd page CSS */
+.info{
+    background-color: rgb(3,5,14);
+    color: white;
+    height: 900px;
+
+}
+
+
+.text-c{
+    text-align: center;
+    padding-top: 2%;
+    font-family: 'IBM Plex Sans Devanagari';
+}
+
+.hl{
+    border-bottom: 2px solid white;
+    width: 5%;
+    margin-top: 2%;
+    margin-left: 48%;
+}
+
+.paragraph{
+    text-align: center;
+}
+
+
+.info .paragraph{
+    font-family: 'IBM Plex Sans Devanagari';
+    position: relative;
+    padding-top: 5%;
+    line-height: 45px;
+    padding-left: 11%;
+    padding-right: 11%;
+    font-size: 27px;
+    text-align-last: center;
+}
+
+.images{
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.images img{
+    height: 100%;
+    width: 100%;
+}
+
+/* last page css */
+
+.register{
+    display: flex;
+    background-color: rgb(3,5,14);
+    color: white;
+    height: 60vh;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px;
+    padding-left: 4%;
+
+}
+
+.grid-container .img{
+    width: 20vw;
+    height: 30vh;
+}
+
+
+.container-headings{
+    font-weight: 600;
+    font-size: 78px;
+    float: right;
+    line-height: 90px;
+    height: fit-content;
+    margin-left: 5%;
+}
+
+.eve_name{
+    font-size: 30px;
+    font-weight: 550;
+}
+
+
+.load_more_arrow {
+    background: transparent;
+    text-align: center;
+    height: fit-content;
+    margin-left: 10%;
+    margin-top: 20vh;
+    
+}
+
+.footer-copyright{
+    color: white;
+}
+
+/* media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .landing_page{
+        height: 80vh;
+    }
+
+    .text .heading .h1{
+        font-size: 85px;
+    }
+
+    .text .heading .year
+    .tagline1
+    .tagline2{
+        font-size: 50px;
+    }
+    .load_more_arrow{
+        display: none;
+    }
+
+    .info .images{
+        display: none;
+    }
+    .info .text-c{
+        padding-top: 10%;
+    }
+
+    .info{
+        height: 100vh;
+    }
+
+    .img_collage{
+        display: none;
+    }
+
+    .container-headings{
+        font-size: 52px;
+    }
+
+    .info .paragraph{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768) {
+    .landing_page{
+        height: 80vh;
+    }
+    .text .heading .h1{
+        font-size: 85px;
+    }
+
+    .text .heading .year
+    .tagline1
+    .tagline2{
+        font-size: 50px;
+    }
+    .load_more_arrow{
+        display: none;
+    }
+    .info .images{
+        display: none;
+    }
+    .info .text-c{
+        padding-top: 10%;
+    }
+
+    .info{
+        height: 90vh;
+    }
+
+    .img_collage{
+        display: none;
+    }
+
+    .container-headings{
+        font-size: 52px;
+    }
+
+    .info .paragraph{
+        font-size: 20px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width:990px) {
+     .load_more_arrow{
+        width: 10%;
+        height: 10%;
+     }
+
+     .landing_page{
+        height: auto;
+     }
+
+     .register .img_collage{
+        display: none;
+     }
+
+     .info .images{
+        height: 20%;
+        row-gap: 2px;
+     }
+
+    .info .card{
+        width: 15rem;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    
+  }
